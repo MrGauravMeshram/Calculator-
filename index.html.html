@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+    
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: bisque;
+     
+    }
+    .box1 {
+      display: flex;
+      height: 500px;
+      width: 250px;
+     border: 2px solid black;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+       border-radius: 20px;
+       background-color: black;
+    }
+    .input-box{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .input-box input{
+        height: 50%;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+    .button-box{
+        height: 70%;
+        width: 100%;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+    button{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-size: 16px;
+      
+
+    }
+    button:active{
+          box-shadow: 4px 6px 5px white;
+    }
+
+
+  </style>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <!--this is a one more input box div for input box-->
+        <div class="input-box">
+          <input type="text" placeholder="0" id="nums" />
+        </div>
+        <div class="button-box">
+          <button id="AC">AC</button>
+          <button id="7">7</button>
+          <button>4</button>
+          <button>1</button>
+          <button>0</button>
+          <button id="bracket">()</button>
+          <button>8</button>
+          <button>5</button>
+          <button>2</button>
+          <button id="dot">.</button>
+          <button>%</button>
+          <button>9</button>
+          <button>6</button>
+          <button>3</button>
+          <button>back</button>
+          <button id="divide">/</button>
+          <button id="mul">*</button>
+          <button id="minus">-</button>
+          <button id="plus">+</button>
+          <button id="equal">=</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="cal.js"></script>
+  </body>
+</html>
